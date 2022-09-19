@@ -8,6 +8,9 @@ function Show() {
     if (inputVal.length > 0) {
         dataUrl = `https://api.tvmaze.com/search/shows?q=${inputVal}`;
     } 
+    else {
+      dataUrl = `https://api.tvmaze.com/search/shows?q=friends`;
+    }
     
    
 
@@ -88,6 +91,7 @@ function Show() {
                                       ></i>{" "}
                                       {element.show.rating.average}
                                     </span>
+                                    <p className='fifty-chars'>{element.show.summary}</p>
                                   </div>
 
                                   <h5 className="text-success text-center">

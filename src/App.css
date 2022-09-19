@@ -76,3 +76,11 @@ main {
   padding: 10px 12px;
   transition: 0.2s;
 }
+.fifty-chars{
+  display:inline-block;
+  white-space: nowrap;
+  overflow:scroll;
+  text-overflow:clip;
+  max-width: 30ch;
+
+}
